@@ -85,7 +85,7 @@ def update_plot(x, y, s, c, file_bytes):
     return fig
 
 # DataFrame widget to show uploaded / predicted data (kept as a real DataFrame value)
-uploaded_table = pn.widgets.DataFrame(pd.DataFrame(), width=800, height=200,
+uploaded_table = pn.widgets.DataFrame(pd.DataFrame(), width=800, height=200)
                                       #sizing_mode="stretch_width", name='Uploaded Data Table')
 
 def _update_uploaded_table(event):
